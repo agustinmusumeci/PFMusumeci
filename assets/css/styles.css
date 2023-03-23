@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.slogan {
+    padding: 15px;
+}
+
+.slogan h2 {
+    font-size: medium;
+    font-weight: 550;
+    color: #b7b5b3;
+}
+
+
+
+
+/* NAVBAR */
+.navBar {
+    padding: 15px;
+    display: inline-block;
+    justify-content: flex-start
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    padding: 5px;  
+    margin-right: 45px;
+    justify-self: left;
+}
+
+.menu li {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+}
+
+.menu a {
+    color: #141301;
+    font-size: larger;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin-top:10px;
+    margin-right: 50px;
+}
+
+.icons a {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    color: #141301;
+}
+
+
+/* FOOTER */
+.foot {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    font-size: medium;
+    background-color: #e5e7e6;
+    line-height: 1.71;
+}
+
+.foot article {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.foot a {
+    color: #b80c09;
+    font-size: large;
+    font-weight: 550;
+    text-align: center;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+.footContacto li {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.footContacto li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* TÍTULOS DE CADA PÁGINA */
+.paginasTitulos {
+    padding: 15px;
+}
+
+.paginasTitulos h1 {
+    text-align: center;
+}
+
+/* index.html */
+
+.parallax {
+    background-image: url("../image/sliders2.jpg");
+    height: 600px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 50px;
+}
+
+.queOfrecemos img {
+    height: 300px;
+}
+
+.parallax2 {
+    background-image: url("../image/sliders.jpg");
+    height: 250px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 50px;
+}
+
+.parallax2 h2 {
+    text-align: center;
+    text-align: center;
+    padding-top: 85px;
+    font-size: xx-large;
+    font-weight: 300;
+    color: #e5e7e6;
+}
+
+.parallax2 a {
+    color: #e5e7e6;
+}
+
+/* servicios.html */
+
+.productos {
+    align-content: center;
+}
+
+/* galeria.html */
+
+.navProductos {
+    text-align: center;
+    margin: 15px;
+}
+
+.navProductos li{
+    display: inline-block;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.parallax3 {
+    background-image: url("../image/background3.jpg");
+    height: 250px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 50px;
+}
+
+.parallax3 h2 {
+    text-align: center;
+    padding-top: 85px;
+    font-size: xx-large;
+    font-weight: 300;
+    color: #e5e7e6;
+}
+
+.parallax3 a {
+    color: #e5e7e6;
+}
+
+/* contacto.html */
+.contacto {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.contacto a {
+    color: #b80c09;
+    font-size: large;
+    font-weight: 550;
+    text-align: center;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#formulario input {
+    margin: 5px;
+    padding: 5px;
+}
+
+#mensaje {
+    margin: 10px;
+    padding: 7px;
+}
+
+/* cotizacion.html */
+
+/* acercade.html */
+
+.acercade1 {
+padding: 15px;
+text-align: left;
+}
+
+
+.acercade2 {
+    padding: 15px;
+    text-align: right;
+}
+
+.acercade3 {
+    padding: 15px;
+    text-align: center;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 11px;
+    }
+} */
