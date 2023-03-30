@@ -8,280 +8,480 @@
     font-family: poppins, sans-serif;
 }
 
-header{
-    text-align: center;
-}
-
-.slogan {
-    padding: 15px;
-}
-
-.slogan h2 {
-    font-size: medium;
-    font-weight: 550;
-    color: #b7b5b3;
-}
-
-
-
-
-/* NAVBAR */
-.navBar {
-    padding: 15px;
-    display: inline-block;
-    justify-content: flex-start
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+li {
+    list-style: none;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+/* NAVBAR */
+.navbar {
+    display: inline;
+    font-size: 20px;
+}
+
+.slogan {
+    padding: 7px;
+    font-size: small;
+    font-weight: 100;
+    text-align: center;
 }
 
 .logo {
-    padding: 5px;  
-    margin-right: 45px;
-    justify-self: left;
+    margin-bottom: 20px;
 }
 
-.menu li {
-    padding-left: 30px;
-    padding-right: 30px;
-    display: inline-block;
+.nav-link {
+    color: #000;
+    font-weight: 550;
 }
 
-.menu a {
-    color: #141301;
-    font-size: larger;
+.nav-link:hover {
+    color: orangered;
+    transition: 0.4s;
 }
 
-.icons {
+.navbar-toggler {
+    padding:5px;
+    margin:20px
+}
+
+/* >>>>index.html<<<< */
+
+/* carrusel */
+
+.sliders {
+    z-index: 3;
+}
+
+@media (max-width:1055px) {
+    .sliders {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+/* que ofrecemos */
+
+#queOfrecemosIndex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.queOfrecemos {
+    text-transform: capitalize;
+}
+
+.card {
+    margin: 50px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.65s;
+}
+
+.card-img-top {
+    filter: brightness(73%) grayscale(65%);
+}
+
+.card-title {
+    text-transform: capitalize;
+}
+
+.card-text {
+    padding: 30px;
+}
+
+/* algunos de nuetros productos */
+
+.algunosProductos {
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.productos {
+    padding: 15px;
+}
+
+.productos:hover {
+    transform: scale(1.02);
+    transition: all 0.65s;
+}
+
+.verMas-contenedor {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: 5px;
-    margin-top:10px;
-    margin-right: 50px;
+    position: relative;
 }
 
-.icons a {
-    padding-left: 30px;
-    padding-right: 30px;
-    display: inline-block;
-    color: #141301;
+.verMas {
+    color: azure;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: orangered;
+    width: 12rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: large;
 }
 
+.verMas:hover {
+    color: azure;
+    background-color: #000;
+    transition: 0.6s;
+}
 
-/* FOOTER */
-.foot {
+/* beneficios */
+
+.beneficios-titulos {
+    margin-top: 15px;
+    background-color: orangered;
+    color: azure;
+}
+
+.beneficios-titulos h3 {
+    font-size: 3rem;
+    padding: 75px;
+}
+
+.beneficios-titulos h4 {
+    padding-bottom: 75px;
+    padding-left: 75px;
+}
+
+.beneficios-contenido {
     display: flex;
-    padding: 50px;
-    justify-content: space-evenly;
-    font-size: medium;
-    background-color: #e5e7e6;
-    line-height: 1.71;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 
-.foot article {
-    padding-left: 5px;
-    padding-right: 5px;
+.beneficios-contenido h4{
+    padding: 3rem;
+}
+
+.fa-users {
+    padding-left: 3.5rem;
+}
+
+.fa-truck-fast , .fa-up-right-and-down-left-from-center, .fa-comment-dots{
+    color: orangered;
+    padding-right: 2rem;
+    padding-top: 3rem;
+}
+
+.fa-truck-fast:hover ,
+.fa-up-right-and-down-left-from-center:hover ,
+.fa-comment-dots:hover {
+    color: black;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+/* cotizar */
+
+.parallax {
+    background-image: url(../image/background3.jpg);
+    min-height: 10rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.8);
+    text-align: center;
+    padding: 7rem 0;
+}
+
+.parallax a {
+    color: white
+}
+
+.parallax a:hover {
+    font-size: 3.8rem ;
+    transition: 0.5s;
+}
+
+/* frase */
+
+.frase-contenedor {
+    box-shadow: 0 0 5px #000;
+    padding-bottom: 60px;
+}
+
+.frase-titulo {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.frase {
+    display: inline-block;
+    margin: 20px;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.3rem;
+}
+
+/* >>>FOOTER<<< */
+
+.foot {
+    margin-top: 3px;
+    padding: 2rem;
+    background-color:#eceeed ;
 }
 
 .foot a {
-    color: #b80c09;
-    font-size: large;
-    font-weight: 550;
-    text-align: center;
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .foot a:hover {
-    text-decoration: underline;
+    color:#000;
+    transition: 0.6s;
 }
 
-.footContacto li {
+.foot-texto {
+    padding-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.foot-contacto {
+    padding-top: 1.5rem;
     list-style: none;
-    padding-left: 30px;
+    line-height: 3rem;
 }
 
-.footContacto li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.foot-navegacion {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
 }
 
-
-/* TÍTULOS DE CADA PÁGINA */
-.paginasTitulos {
-    padding: 15px;
+.foot-navegacion a{
+    font-size: 1.2rem;
 }
 
-.paginasTitulos h1 {
+.copyright {
+    padding-top: 3rem;
     text-align: center;
+    line-height: 0.5rem;
 }
 
-/* index.html */
-
-.parallax {
-    background-image: url("../image/sliders2.jpg");
-    height: 600px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    margin-bottom: 50px;
+.copyright-derechos {
+    padding: 10px;
 }
 
-.queOfrecemos img {
-    height: 300px;
+.arrow-up {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: rgba(255, 69, 0, 0.6);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50px;
+    color: azure;
+    justify-content: center;
+    padding-top: 30px;
 }
+
+.arrow-up:hover {
+    color: azure;
+    background: rgba(255, 69, 0, 1);
+    transition: 0.6s;
+}
+
+
+
+/* >>>>servicios.html<<<<  */
+
+.col {
+    padding: 5rem;
+}
+
+.col h4 {
+    margin-bottom: 3rem;
+}
+
+.parallax-servicios {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* >>>>galeria.html<<<< */
+
+.galeria-titulo {
+    padding: 50px;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.nav-pills .nav-link.active{
+    background-color:orangered;
+    border-radius: 3px;
+}
+
+.galeria-imagenes img {
+    padding-bottom: 1.5rem;
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+
 
 .parallax2 {
-    background-image: url("../image/sliders.jpg");
-    height: 250px;
-
+    background-image: url(../image/background1.jpg);
+    min-height: 10rem;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    margin-bottom: 50px;
-}
-
-.parallax2 h2 {
+    filter: grayscale(0.5);
     text-align: center;
-    text-align: center;
-    padding-top: 85px;
-    font-size: xx-large;
-    font-weight: 300;
-    color: #e5e7e6;
+    padding: 7rem 0;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .parallax2 a {
-    color: #e5e7e6;
+    color: white
 }
 
-/* servicios.html */
-
-.productos {
-    align-content: center;
+.parallax2 a:hover {
+    font-size: 3.8rem;
+    transition: 0.5s;
 }
 
-/* galeria.html */
+/* >>>>contacto.html<<<< */
 
-.navProductos {
+.contacto-titulo {
+    padding: 50px;
+}
+
+.mapa {
+    height: 70vh
+}
+
+#detallesDeContacto {
+    padding: 3rem;
+}
+
+#detallesDeContacto h2 {
     text-align: center;
-    margin: 15px;
+    padding-bottom: 2rem;
 }
 
-.navProductos li{
-    display: inline-block;
-    flex-direction: row;
-    padding-left: 30px;
-    padding-right: 30px;
+.formulario-contenedor {
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.formulario-contenedor h2{
     text-align: center;
+    padding-bottom: 2rem;
 }
 
-.parallax3 {
-    background-image: url("../image/background3.jpg");
-    height: 250px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    margin-bottom: 50px;
-}
-
-.parallax3 h2 {
-    text-align: center;
-    padding-top: 85px;
-    font-size: xx-large;
-    font-weight: 300;
-    color: #e5e7e6;
-}
-
-.parallax3 a {
-    color: #e5e7e6;
-}
-
-/* contacto.html */
-.contacto {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.contacto h2 {
-    text-align: center;
-    font-weight: 400;
-}
-
-.contacto a {
-    color: #b80c09;
-    font-size: large;
-    font-weight: 550;
-    text-align: center;
-}
-
-.contacto a:hover {
-    text-decoration: underline;
-}
-
-#formulario{
+#formulario {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #formulario input {
-    margin: 5px;
-    padding: 5px;
+    margin: 0.3rem;
 }
 
-#mensaje {
-    margin: 10px;
-    padding: 7px;
+.parallax-contacto {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);   
 }
 
-/* cotizacion.html */
+/* >>>>cotizacion.html<<<< */
 
-/* acercade.html */
+.cotizacion-titulo {
+    padding: 50px;
+}
+
+.cotizacion-formulario {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cotizacion-formulario h2 {
+    text-align: center;
+    padding-bottom:2rem ;
+}
+
+.cotizacion-formulario input{
+    margin: 0.3rem;
+}
+
+.formulario-descripcion {
+    padding-bottom: 50px;
+}
+
+.cotizacion-main {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2px;
+}
+
+/* >>>>acercade.html<<<< */
+
+.acercade-titulo {
+    padding: 50px;
+}
 
 .acercade1 {
-padding: 15px;
-text-align: left;
+    height: 15rem;
+    margin: 3rem;
 }
 
+.acercade1 h2 {
+    text-align: center;
+    padding-bottom: 2.4rem;
+}
 
 .acercade2 {
-    padding: 15px;
-    text-align: right;
+    height: 15rem;
+    margin: 50px;
+}
+
+.acercade2 h2 {
+    text-align: center;
+    padding-bottom: 2.4rem;
 }
 
 .acercade3 {
-    padding: 15px;
+    height: 15rem;
+    margin: 3rem;
+}
+
+.acercade3 h2 {
     text-align: center;
+    padding-bottom: 2.4rem;
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 11px;
-    }
-} */

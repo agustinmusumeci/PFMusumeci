@@ -6,151 +6,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráfica Musumeci | Servicios</title>
     <link rel="shortcut icon" href="../assets/image/favicon.ico" type="/image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        
-        <div class="slogan">
-            <h2><b>Imprimiendo calidad</b> desde 1960</h2>
-            <hr>
-        </div>
-        
-        <nav class="navBar">
-        
-            <img src="../assets/image/logo.png" alt="logo" class="logo" />
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-        
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-        
-                <li>
-                    <a href="./galeria.html">Galeria</a>
-                </li>
-        
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-        
-                <li>
-                    <a href="./acercade.html">Acerca de</a>
-                </li>
-            </ul>
-        
-            <div class="icons">
-                <a class="material-icons" alt="" href="./contacto.html#detallesdecontacto">phone</a>
-                <div>|</div>
-                <a class="material-icons" alt="" href="./contacto.html#detallesDeContacto">place</a>
-                <div>|</div>
-                <a class="material-icons" alt="" href="./contacto.html#detallesDeContacto">email</a>
-                <div>|</div>
-                <a class="material-icons" alt="" href="./contacto.html#detallesDeContacto">calendar_today</a>
+    <header class="shadow-sm" id="top">
+        <nav class="navbar navbar-expand-md">
+            <div class="row">
+                <h3 class="slogan d-flex justify-content-center text-muted">Imprimiendo calidad desde&#160<span class="fw-bold">1960</span></h3>
+            </div>
+            <div class="row">
+                <div class="flex-lg-row d-flex justify-content-center logo">
+                    <a href="../index.html"><img src="../assets/image/logo.png" alt="logo"></img></a>
+                </div>
+            </div>
+            <div class="collapse-lg" id="navbarToggleExternalContent">
+                <div class="row">
+                    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"
+                                    href="#">Contactar</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="./cotizacion.html">Cotización</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acercade.html">Acerca de</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
-        
     </header>
 
-
     <main>
-            <hr>
-        <div class="paginasTitulos">
-            <h1>Servicios</h1>
+        <section class="bg-light bg-gradiant" style="--bs-bg-opacity: .3;" id="queOfrecemosIndex">
+            <h2 class="display-4 text-center queOfrecemos">Servicios</h2>
+            <div class="card-group">
+                <div class="card">
+                    <img src="../assets/image/impresionoffset.jpg" class="card-img-top" alt="impresionoffset">
+                    <div class="card-body">
+                        <h5 class="card-title display-6 text-center">impresión offset</h5>
+                        <p class="card-text text-muted">La más utilizado en las grandes tiradas de volumen, gran calidad,
+                            rapidez y
+                            bajo costo.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/image/impresiondigital.jpg" class="card-img-top" alt="impresiondigital">
+                    <div class="card-body">
+                        <h5 class="card-title display-6 text-center">impresión digital</h5>
+                        <p class="card-text text-muted">Ideal para proyectos de impresión de bajo volumen y tiempos de entrega cortos por la disponibilidad casi
+                        inmediata de los impresos. La gama de sustratos posibles a imprimir es muy amplia, como son: Papel Estucado y Obra,
+                        Autoadhesivo, Plásticos OPP,
+                        PVC, Alto impacto, Reciclados, etc.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/image/diseñografico.jpg" class="card-img-top" alt="diseñografico">
+                    <div class="card-body">
+                        <h5 class="card-title display-6 text-center">diseño gráfico</h5>
+                        <p class="card-text text-muted">Cada pieza gráfica requiere un diseño limpio y pregnante. Basicamente una impresión de alta calidad, debe partir de un
+                        buen diseño; podemos ayudarlo a crear sus productos de cero, o bien asesorar para que sean confeccionado de
+                        formacorrecta y
+                        una producción sin problemas posteriores. Cada pieza gráfica requiere un diseño limpio y pregnante. Basicamente una
+                        impresión de alta calidad, debe partir de un buen diseño.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-light" style="--bs-bg-opacity: .3;">
+            <h2 class="display-4 text-center algunosProductos">nuestros productos</h2>
+            <div class="row">
+                <img src="../assets/image/producto5.jpg" class="img-fluid productos col-lg-3 col-md-6" alt="producto_1">
+                <img src="../assets/image/producto6.jpg" class="img-fluid productos col-lg-3 col-md-6" alt="producto_2">
+                <img src="../assets/image/producto7.jpg" class="img-fluid productos col-lg-3 col-md-6" alt="producto_3">
+                <img src="../assets/image/producto8.jpg" class="img-fluid productos col-lg-3 col-md-6" alt="producto_4">
+            </div>
+            <div class="verMas-contenedor">
+                <a href="./pages/galeria.html" class="verMas d-block">ver galería</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="row beneficios-titulos">
+                <h3 class="col-12 te">Satisfacción <b>100%</b> garantizada</h3>
+                <small>
+                    <h4 class="col-12">Nuestros clientes nos recomiendan</h4>
+                </small>
+            </div>
+            <div class="row beneficios-contenido">
+                
+                
+                
+                
+                
+                
+            </div>
+        </section>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="h-100">
+                    <div class="">
+                        <h4 class="text-center fw-lighter"><i class="fa-solid fa-truck-fast fa-xl"></i>Cortos tiempos de
+                            Entrega.</h4>
+                        <p class="">Conscientes de las necesidad en producir piezas gráficas en cortos plazo de tiempo,
+                            trabajamos constantemente en la
+                            mejora continua de los procesos para bajar los tiempos de producción de ni tes y así satisfacer de nuestros
+                            clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100">
+                    <div class="">
+                        <h4 class="text-center fw-lighter"><i
+                                class="fa-solid fa-up-right-and-down-left-from-center fa-lg"></i>Flexibilidad y Adaptación.</h4>
+                        <p class="">Las distintas ideas e innovaciones de los actuales diseñadores y empresas para lograr
+                            destacar sus productos de la
+                            competencia; Y la amplia gama de nuevos sustratos que ofrece el mercado, nos exige que nuestra empresa sea Flexible
+                            y se
+                            adapte rápidamente a las nuevas propuestas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h-100">
+                    <div class="">
+                        <h4 class="text-center fw-lighter"><i class="fa-solid fa-comment-dots fa-xl"></i> AsesoramientoPersonal.</h4>
+                        <p class="">La comunicación bidireccional entre nuestro personal capacitados y los
+                            diseñadores/clientes, permite que las piezas a
+                            imprimir se reproduzcan de forma correcta.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-            <hr>
-        <section class="queOfrecemos">
-            <article>
-                <h2>Impresión Offset</h2>
-                <img src="../assets/image/impresionoffset.jpg" alt="Impresion_Offset">
-                <p>La más utilizado en las grandes tiradas de volumen, gran calidad, rapidez y bajo costo.</p>
-            </article>
-            <article>
-                <h2>Impresión Digital</h2>
-                <img src="../assets/image/impresiondigital.jpg" alt="Impresion_Digital">
-                <p>Ideal para proyectos de impresión de bajo volumen y tiempos de entrega cortos por la disponibilidad casi
-                    inmediata de los impresos. La gama de sustratos posibles a imprimir es muy amplia, como son: Papel Estucado y Obra, Autoadhesivo, Plásticos OPP,
-                    PVC, Alto impacto, Reciclados, etc.</p>
-            </article>
-            <article>
-                <h2>Diseño Gráfico</h2>
-                <img src="../assets/image/diseñografico.jpg" alt="Diseño_Grafico">
-                <p>Cada pieza gráfica requiere un diseño limpio y pregnante. Basicamente una impresión de alta calidad, debe partir de un
-                    buen diseño; podemos ayudarlo a crear sus productos de cero, o bien asesorar para que sean confeccionado de formacorrecta y
-                    una producción sin problemas posteriores. Cada pieza gráfica requiere un diseño limpio y pregnante. Basicamente una impresión de alta calidad, debe partir de un buen diseño.</p>
-            </article>
-        </section>
 
-        <section>
-            <h2>Nuestros Productos</h2>
-            <button>
-                <a href="./galeria.html">Ver galería</a>
-            </button>
-        </section>
-
-        <section>
-            <h2>Satisfacción 100% garantizada</h2>
-            <h2>Nuestros clientes nos recomiendad</h2>
-            <h3>Cortos tiempos de Entrega</h3>
-                <p>Conscientes de las necesidad en producir piezas gráficas en cortos plazo de tiempo, trabajamos constantemente en la
-                mejora continua de los procesos para bajar los tiempos de producción de ni tes y así satisfacer de nuestros clientes.</p>
-            <h3>Flexibilidad y Adaptación</h3>
-                <p>Las distintas ideas e innovaciones de los actuales diseñadores y empresas para lograr destacar sus productos de la
-                competencia; Y la amplia gama de nuevos sustratos que ofrece el mercado, nos exige que nuestra empresa sea Flexible y se
-                adapte rápidamente a las nuevas propuestas.</p>
-            <h3>Asesoramiento Personal</h3>
-                <p>La comunicación bidireccional entre nuestro personal capacitados y los diseñadores/clientes, permite que las piezas a
-                imprimir se reproduzcan de forma correcta.</p>
-        </section>
-
-        <section class="parallax2">
-            <h2>Cotiza tu producto <a href="./cotizacion.html"><b>aquí</b></a></a></h2>
+        <section class="parallax parallax-servicios">
+            <h2 class="display-4"><a href="./pages/cotizacion.html"><small>Cotiza tu producto aquí</small> </a></h2>
         </section>
 
     </main>
 
 
     <footer class="foot">
-    
-        <article>
-            <a href="./contacto.html#formulario">CONTACTANOS</a>
-            <p>
-            <ul class="footContacto">
-                <li>
-                    <b>Dirección:</b> Sucre 1559, [x5000jxi] Córdoba Argentina
-                </li>
-                <li>
-                    <b>Teléfono:</b> +54 (0351) 473-3945 471-2933
-                </li>
-                <li>
-                    <b>E-mail:</b> ventas@graficamusumeci.com.ar
-                </li>
-                <li>
-                    Abierto Lun. a Vie.: 08 am - 19 pm
-                </li>
-            </ul>
-    
-            </p>
-        </article>
-    
-        <article>
-            <a href="./galeria.html">¿QUÉ OFRECEMOS?</a>
-            <p>Trabajamos con impresiones Offset y Digitales, proviendo la mejor calidad; a su vez proporcionamos diseño
-                gráfico.</p>
-        </article>
-    
-        <article>
-            <a href="./acercade.html">ACERCA DE</a>
-            <p><b>Gráfica Musumeci SRL</b>, empresa familiar fundada a fines de 1960, comprometida con la excelencia en sus
-                productos
-                impresos, incorporando diversas tecnologias.</p>
-        </article>
-    
+        <div class="row">
+            <article class="col-sm-12 col-lg-4">
+                <a href="./contacto.html#formulario" class="d-block text-center">CONTACTANOS</a>
+                <ul class="foot-contacto">
+                    <li>
+                        <i class="fa-solid fa-location-dot fa-lg"></i><b> Dirección:</b> Sucre 1559, [x5000jxi] Córdoba
+                        Argentina
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone fa-lg"></i><b> Teléfono:</b> +54 (0351) 473-3945 471-2933
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope fa-lg"></i><b> E-mail:</b> ventas@graficamusumeci.com.ar
+                    </li>
+                    <li>
+                        <strong>Abierto Lun. a Vie. 08 am - 19 pm</strong>
+                    </li>
+                </ul>
+            </article>
+            <article class="col-sm-12 col-lg-4">
+                <a href="#top" class="d-block text-center">NAVEGACION</a>
+                <ul class="text-center foot-navegacion">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#top">Servicios</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./acercade.html">Acerca de</a></li>
+                </ul>
+            </article>
+            <article class="col-sm-12 col-lg-4">
+                <a href="./galeria.html" class="d-block text-center">¿QUÉ OFRECEMOS?</a>
+                <p class="foot-texto text-center">Trabajamos con impresiones Offset y Digitales, proviendo la mejor calidad;
+                    a su
+                    vez proporcionamos diseño
+                    gráfico.</p>
+            </article>
+            <div class="row">
+                <div class="col-12 copyright">
+                    <p>
+                        Copyright <strong>©</strong> 2023
+                    </p>
+                    <hr>
+                    <p class="text-muted copyright-derechos">
+                        Todos los derechos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <a href="#top" class="arrow-up"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
