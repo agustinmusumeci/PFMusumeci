@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+
+//VARIABLES
+$colorPrincipal:orangered;
+$colorSecundario: azure;
+$colorSombraFooter: 0 4px 5px rgba(0, 0, 0, 0.4);
+
+$espaciadoTitulos: 50px;
+$transicion:0.6s;
+
+
+
+
+//GLOBAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+
+
+// NAVBAR
+.navbar {
+    display: inline;
+    font-size: 20px;
+
+    .slogan {
+        padding: 7px;
+        font-size: small;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        color: #000;
+        font-weight: 550;
+    }
+    
+    .nav-link:hover {
+        color: $colorPrincipal;
+        transition: $transicion;
+    }
+    
+    .navbar-toggler {
+        padding: 5px;
+        margin: 20px
+    }
+}
+
+
+
+// >>>>index.html<<<<
+// carrusel
+.sliders {
+    z-index: 3;
+}
+
+@media (max-width:1055px) {
+    .sliders {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+
+// que ofrecemos
+#queOfrecemosIndex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .queOfrecemos {
+        text-transform: capitalize;
+    }
+    
+    .card {
+        margin: 50px;
+
+        .card-img-top {
+            filter: brightness(73%) grayscale(65%);
+        }
+            
+        .card-title {
+            text-transform: capitalize;
+        }
+            
+        .card-text {
+            padding: 30px;
+        }
+
+}
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all $transicion
+}
+
+
+
+// algunos de nuetros productos
+.algunosProductos {
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.productos {
+    padding: 15px;
+}
+
+.productos:hover {
+    transform: scale(1.02);
+    transition: all $transicion;
+}
+
+.verMas-contenedor {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .verMas {
+        color: $colorSecundario;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        background-color: $colorPrincipal;
+        width: 12rem;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: large;
+    }
+}
+
+.verMas:hover {
+    color: $colorSecundario;
+    background-color: #000;
+    transition: $transicion;
+}
+
+
+
+// beneficios
+.beneficios-titulos {
+
+    margin-top: 15px;
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
+
+    h3 {
+        font-size: 3rem;
+        padding: 75px;
+    }
+    
+    h4 {
+        padding-bottom: 75px;
+        padding-left: 75px;
+    }
+} 
+
+.beneficios-contenido {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    h4 {
+        padding: 3rem;
+    }
+}
+
+.fa-users {
+    padding-left: 3.5rem;
+}
+
+.fa-truck-fast,
+.fa-up-right-and-down-left-from-center,
+.fa-comment-dots {
+    color: $colorPrincipal;
+    padding-right: 2rem;
+    padding-top: 3rem;
+}
+
+.fa-truck-fast:hover,
+.fa-up-right-and-down-left-from-center:hover,
+.fa-comment-dots:hover {
+    color: black;
+    transform: scale(1.02);
+    transition: $transicion;
+}
+
+
+
+// cotizar
+.parallax {
+    background-image: url(../image/background3.jpg);
+    min-height: 10rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.8);
+    text-align: center;
+    padding: 7rem 0;
+
+    a {
+        color: white
+    }
+}
+
+.parallax a:hover {
+    font-size: 3.8rem;
+    transition: $transicion;
+}
+
+
+
+// frase
+.frase-contenedor {
+    box-shadow: 0 0 5px #000;
+    padding-bottom: 60px;
+}
+
+.frase-titulo {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.frase {
+    display: inline-block;
+    margin: 20px;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.3rem;
+}
+
+
+
+// >>>FOOTER<<<
+.foot {
+    margin-top: 3px;
+    padding: 2rem;
+    background-color: #eceeed;
+
+    a {
+        color: $colorPrincipal;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}
+
+.foot a:hover {
+    color: #000;
+    transition: $transicion;
+}
+
+.foot-texto {
+    padding-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.foot-contacto {
+    padding-top: 1.5rem;
+    list-style: none;
+    line-height: 3rem;
+}
+
+.foot-navegacion {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+
+    a {
+            font-size: 1.2rem;
+    }
+}
+
+.copyright {
+    padding-top: 3rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+.copyright-derechos {
+    padding: 10px;
+}
+
+.arrow-up {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: rgba(255, 69, 0, 0.6);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50px;
+    color: $colorSecundario;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.arrow-up:hover {
+    color: $colorSecundario;
+    background: rgba(255, 69, 0, 1);
+    transition: $transicion;
+}
+
+
+
+// >>>>servicios.html<<<<
+.col {
+    padding: 5rem;
+    h4 {
+        margin-bottom: 3rem;
+    }
+}
+
+.parallax-servicios {
+    @extend .parallax;
+    box-shadow:$colorSombraFooter;
+}
+
+
+
+// >>>>galeria.html<<<<
+.galeria-titulo {
+    padding: $espaciadoTitulos;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+    .nav-link {
+        color: #000;
+    }
+
+    .nav-link.active {
+        background-color: $colorPrincipal;
+        border-radius: 3px;
+    }
+}
+
+.galeria-imagenes {
+    img {
+        padding-bottom: 1.5rem;
+    }
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+
+.parallax2 {
+    @extend .parallax;
+    background-image: url(../image/background1.jpg);
+    background-size: cover;
+    filter: grayscale(0.5);
+    box-shadow: $colorSombraFooter;
+
+    a {
+        color: white
+    }
+}
+
+.parallax2 a:hover {
+    font-size: 3.8rem;
+    transition: 0.5s;
+}
+
+
+
+// >>>>contacto.html<<<<
+.contacto-titulo {
+    padding: $espaciadoTitulos;
+}
+
+.mapa {
+    height: 70vh
+}
+
+#detallesDeContacto {
+    padding: 3rem;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+
+.formulario-contenedor {
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin: 0.3rem;
+    }
+}
+
+.parallax-contacto {
+    @extend .parallax;
+    box-shadow: $colorSombraFooter;
+}
+
+
+
+// >>>>cotizacion.html<<<<
+.cotizacion-titulo {
+    padding: $espaciadoTitulos;
+}
+
+.cotizacion-formulario {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    input {
+        margin: 0.3rem;
+    }
+}
+
+.formulario-descripcion {
+    padding-bottom: 50px;
+}
+
+.cotizacion-main {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2px;
+}
+
+
+
+// >>>>acercade.html<<<< 
+.acercade-titulo {
+    padding: $espaciadoTitulos;
+}
+
+.acercade1 {
+    margin: 3rem;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+}
+
+.acercade2 {
+    margin: 50px;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+}
+
+.acercade3 {
+    margin: 5px;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2.4rem;
+    }
+}
+
+.main-acercade {
+    box-shadow: $colorSombraFooter;
+}
