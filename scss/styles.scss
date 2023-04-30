@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
 
 //VARIABLES
-$colorPrincipal:orangered;
+$colorPrincipal:#ff4500;
 $colorSecundario: azure;
 $colorSombraFooter: 0 4px 5px rgba(0, 0, 0, 0.4);
 
@@ -9,6 +9,46 @@ $espaciadoTitulos: 50px;
 $transicion:0.6s;
 
 
+//MIXIN
+@mixin titulos() {
+    padding: $espaciadoTitulos;
+}
+
+@mixin movil-footer-sm() {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin movil-footer-md() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin movil-footer-lg() {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin movil-footer-xl() {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin movil-footer-xxl() {
+    @media screen and (max-width: 1377px) {
+        @content;
+    }
+}
+
+@mixin movil-acercade() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
 
 
 //GLOBAL
@@ -243,8 +283,7 @@ ul {
 
 // frase
 .frase-contenedor {
-    box-shadow: 0 0 5px #000;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
 }
 
 .frase-titulo {
@@ -267,19 +306,41 @@ ul {
 
 // >>>FOOTER<<<
 .foot {
+    width: 100%;
+    height: 700px;
     margin-top: 3px;
     padding: 2rem;
-    background-color: #eceeed;
+    // overflow-y: auto;
+    background-image: url(../image/fondoFooter.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @include movil-footer-xxl(){
+        height: 850px;
+    }
+    @include movil-footer-xl(){
+        height: 850px;
+    }
+    @include movil-footer-lg(){
+        height: 1100px;
+    }
+    @include movil-footer-md(){
+        height: 1100px;
+    }
+    @include movil-footer-sm() {
+        height: 1270px;
+    }
 
     a {
-        color: $colorPrincipal;
+        color: #000;
         font-size: 1.5rem;
         font-weight: lighter;
     }
 }
 
 .foot a:hover {
-    color: #000;
+    color: $colorPrincipal;
     transition: $transicion;
 }
 
@@ -292,6 +353,7 @@ ul {
     padding-top: 1.5rem;
     list-style: none;
     line-height: 3rem;
+    text-align: center;
 }
 
 .foot-navegacion {
@@ -305,9 +367,11 @@ ul {
 }
 
 .copyright {
-    padding-top: 3rem;
+    padding-top: 17rem;
+    color: $colorSecundario;
     text-align: center;
-    line-height: 0.5rem;
+    line-height: 1em;
+    
 }
 
 .copyright-derechos {
@@ -339,21 +403,18 @@ ul {
 // >>>>servicios.html<<<<
 .col {
     padding: 5rem;
-    h4 {
-        margin-bottom: 3rem;
-    }
 }
 
 .parallax-servicios {
+    margin-bottom: 75px;
     @extend .parallax;
-    box-shadow:$colorSombraFooter;
 }
 
 
 
 // >>>>galeria.html<<<<
 .galeria-titulo {
-    padding: $espaciadoTitulos;
+    @include titulos();
 }
 
 .nav-pills {
@@ -387,7 +448,7 @@ ul {
     background-image: url(../image/background1.jpg);
     background-size: cover;
     filter: grayscale(0.5);
-    box-shadow: $colorSombraFooter;
+    margin-bottom: 75px;
 
     a {
         color: white
@@ -403,7 +464,7 @@ ul {
 
 // >>>>contacto.html<<<<
 .contacto-titulo {
-    padding: $espaciadoTitulos;
+    @include titulos();
 }
 
 .mapa {
@@ -412,10 +473,10 @@ ul {
 
 #detallesDeContacto {
     padding: 3rem;
-
+    
     h2 {
         text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom:2rem ;
     }
 }
 
@@ -425,9 +486,10 @@ ul {
     padding-right: 5rem;
     padding-bottom: 5rem;
 
-    h2 {
+    h1 {
         text-align: center;
         padding-bottom: 2rem;
+        font-size: 35px;
     }
 }
 
@@ -436,20 +498,23 @@ ul {
     flex-direction: column;
 
     input {
-        margin: 0.3rem;
+        margin: 5px;
+        padding: 10px 20px 10px 20px;
+        border: 20px;
+        border-radius: 20px;
     }
 }
 
 .parallax-contacto {
     @extend .parallax;
-    box-shadow: $colorSombraFooter;
+    margin-bottom: 75px;
 }
 
 
 
 // >>>>cotizacion.html<<<<
 .cotizacion-titulo {
-    padding: $espaciadoTitulos;
+    @include titulos();
 }
 
 .cotizacion-formulario {
@@ -459,32 +524,29 @@ ul {
 
     h2 {
         text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom: 0rem;
     }
 
     input {
-        margin: 0.3rem;
+        margin: 5px;
+        padding: 10px 20px 10px 20px;
+        border: 20px;
+        border-radius: 20px;
     }
-}
-
-.formulario-descripcion {
-    padding-bottom: 50px;
-}
-
-.cotizacion-main {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    margin-bottom: 2px;
 }
 
 
 
 // >>>>acercade.html<<<< 
 .acercade-titulo {
-    padding: $espaciadoTitulos;
+    @include titulos();
 }
 
 .acercade1 {
     margin: 3rem;
+    @include movil-acercade(){
+        margin: 0;
+    }
 
     h2 {
         text-align: center;
@@ -494,6 +556,9 @@ ul {
 
 .acercade2 {
     margin: 50px;
+    @include movil-acercade() {
+            margin: 0;
+        }
 
     h2 {
         text-align: center;
@@ -510,8 +575,4 @@ ul {
         text-align: center;
         padding-bottom: 2.4rem;
     }
-}
-
-.main-acercade {
-    box-shadow: $colorSombraFooter;
 }

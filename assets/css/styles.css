@@ -44,7 +44,7 @@ ul {
   font-weight: 550;
 }
 .navbar .nav-link:hover {
-  color: orangered;
+  color: #ff4500;
   transition: 0.6s;
 }
 .navbar .navbar-toggler {
@@ -111,7 +111,7 @@ ul {
   margin: 10px;
   padding: 20px;
   text-align: center;
-  background-color: orangered;
+  background-color: #ff4500;
   width: 12rem;
   border-radius: 3px;
   text-transform: uppercase;
@@ -126,7 +126,7 @@ ul {
 
 .beneficios-titulos {
   margin-top: 15px;
-  background-color: orangered;
+  background-color: #ff4500;
   color: azure;
 }
 .beneficios-titulos h3 {
@@ -154,7 +154,7 @@ ul {
 .fa-truck-fast,
 .fa-up-right-and-down-left-from-center,
 .fa-comment-dots {
-  color: orangered;
+  color: #ff4500;
   padding-right: 2rem;
   padding-top: 3rem;
 }
@@ -189,8 +189,7 @@ ul {
 }
 
 .frase-contenedor {
-  box-shadow: 0 0 5px #000;
-  padding-bottom: 60px;
+  padding-bottom: 75px;
 }
 
 .frase-titulo {
@@ -210,18 +209,48 @@ ul {
 }
 
 .foot {
+  width: 100%;
+  height: 700px;
   margin-top: 3px;
   padding: 2rem;
-  background-color: #eceeed;
+  background-image: url(../image/fondoFooter.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+@media screen and (max-width: 1377px) {
+  .foot {
+    height: 850px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .foot {
+    height: 850px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .foot {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .foot {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .foot {
+    height: 1270px;
+  }
 }
 .foot a {
-  color: orangered;
+  color: #000;
   font-size: 1.5rem;
   font-weight: lighter;
 }
 
 .foot a:hover {
-  color: #000;
+  color: #ff4500;
   transition: 0.6s;
 }
 
@@ -234,6 +263,7 @@ ul {
   padding-top: 1.5rem;
   list-style: none;
   line-height: 3rem;
+  text-align: center;
 }
 
 .foot-navegacion {
@@ -246,9 +276,10 @@ ul {
 }
 
 .copyright {
-  padding-top: 3rem;
+  padding-top: 17rem;
+  color: azure;
   text-align: center;
-  line-height: 0.5rem;
+  line-height: 1em;
 }
 
 .copyright-derechos {
@@ -278,12 +309,9 @@ ul {
 .col {
   padding: 5rem;
 }
-.col h4 {
-  margin-bottom: 3rem;
-}
 
 .parallax-servicios {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 75px;
 }
 
 .galeria-titulo {
@@ -299,7 +327,7 @@ ul {
   color: #000;
 }
 .nav-pills .nav-link.active {
-  background-color: orangered;
+  background-color: #ff4500;
   border-radius: 3px;
 }
 
@@ -316,7 +344,7 @@ ul {
   background-image: url(../image/background1.jpg);
   background-size: cover;
   filter: grayscale(0.5);
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 75px;
 }
 .parallax2 a {
   color: white;
@@ -349,9 +377,10 @@ ul {
   padding-right: 5rem;
   padding-bottom: 5rem;
 }
-.formulario-contenedor h2 {
+.formulario-contenedor h1 {
   text-align: center;
   padding-bottom: 2rem;
+  font-size: 35px;
 }
 
 #formulario {
@@ -359,11 +388,14 @@ ul {
   flex-direction: column;
 }
 #formulario input {
-  margin: 0.3rem;
+  margin: 5px;
+  padding: 10px 20px 10px 20px;
+  border: 20px;
+  border-radius: 20px;
 }
 
 .parallax-contacto {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 75px;
 }
 
 .cotizacion-titulo {
@@ -377,19 +409,13 @@ ul {
 }
 .cotizacion-formulario h2 {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
 .cotizacion-formulario input {
-  margin: 0.3rem;
-}
-
-.formulario-descripcion {
-  padding-bottom: 50px;
-}
-
-.cotizacion-main {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  margin-bottom: 2px;
+  margin: 5px;
+  padding: 10px 20px 10px 20px;
+  border: 20px;
+  border-radius: 20px;
 }
 
 .acercade-titulo {
@@ -399,6 +425,11 @@ ul {
 .acercade1 {
   margin: 3rem;
 }
+@media screen and (max-width: 768px) {
+  .acercade1 {
+    margin: 0;
+  }
+}
 .acercade1 h2 {
   text-align: center;
   padding-bottom: 2.4rem;
@@ -406,6 +437,11 @@ ul {
 
 .acercade2 {
   margin: 50px;
+}
+@media screen and (max-width: 768px) {
+  .acercade2 {
+    margin: 0;
+  }
 }
 .acercade2 h2 {
   text-align: center;
@@ -420,10 +456,6 @@ ul {
 .acercade3 h2 {
   text-align: center;
   padding-bottom: 2.4rem;
-}
-
-.main-acercade {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=styles.css.map */
